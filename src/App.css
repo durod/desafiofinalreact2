@@ -2,8 +2,7 @@
 .pizza-detail-container {
   display: flex;
   background: url(https://i.pinimg.com/736x/7b/5e/64/7b5e64e793d8d9a11642ed1046fe280b.jpg);
-  width: 100vw;
-  height: 100%;
+  
   margin-top: 6%;
   padding: 5rem;
 }
@@ -17,6 +16,9 @@
   width: 100%;
   text-align: center;
   border-radius: 15%;
+  background-color: aliceblue;
+    opacity: 90%;
+  
 }
 
 .pizza-card {
@@ -25,7 +27,6 @@
   filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
   font-family: monospace;
   font-size: x-large;
-  
 }
 
 .pizza-card::after {
@@ -52,6 +53,8 @@
   margin-top: 5%;
   margin-bottom: 8%;
   text-align: center;
+  font-family: fantasy;
+  text-transform: uppercase;
 }
 
 .card-body-home {
@@ -61,7 +64,7 @@
 }
 
 .card-img-top {
-  height: 200px;
+  
   object-fit: cover;
   padding: 1rem;
   border-radius: 18px;
@@ -82,16 +85,10 @@
   margin-bottom: 1rem;
 }
 
-
-
-
 /*----PizzaDetail----*/
 
-
-
 .pizza-info-container {
-  width: 100%;
-  
+  height: 100vh;
   background: url(https://i.pinimg.com/736x/7b/5e/64/7b5e64e793d8d9a11642ed1046fe280b.jpg);
   display: flex;
   padding: 6rem;
@@ -100,12 +97,14 @@
 
 .pizza-info-card {
   display: flex;
+  height: 55%;
 }
 
 .h2-infocard-name {
   text-decoration: underline;
-  font-family: monospace;
+  font-family: cursive;
   font-size: xxx-large;
+  text-transform: uppercase;
 }
 
 .pizza-info-image {
@@ -113,7 +112,7 @@
   height: 100%;
   object-fit: cover;
   padding: 2px;
-  border-radius: 25px
+  border-radius: 25px;
 }
 ul {
   list-style: circle;
@@ -132,22 +131,46 @@ ul {
   margin-top: 0;
   margin-bottom: 1rem;
   background-color: bisque;
-  font-family: monospace;
+  font-family: cursive;
+  text-transform: capitalize;
+  border-radius: 9px;
+  font-size: medium;
 }
 
-.pizza-info-price-btn{
+.pizza-info-price-btn {
   display: flex;
   gap: 10rem;
 }
 
-
-
 /*---------CARRITO DE COMPRAS------------------*/
 
-.pizza-list{
+.pizza-car-container {
+  display: flex;
+  background: url(https://i.pinimg.com/736x/7b/5e/64/7b5e64e793d8d9a11642ed1046fe280b.jpg);
+  width: 100%;
+  height: 100vh;
+  margin-top: 5%;
+  padding: 5rem;
+}
 
+.card-titulo-car{
+  
+    font-family: fantasy;
+    font-size: xxx-large;
+    margin-bottom: 3%;
+    font-style: italic;
+    border: 4px solid slategray;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    border-radius: 15%;
+    background-color: aliceblue;
+    opacity: 90%;
+  
+  
+}
+.pizza-list {
   width: 65%;
-
 }
 .pizza-item {
   display: flex;
@@ -156,7 +179,7 @@ ul {
   border: solid;
   border-radius: 25px;
   padding: 14px;
-  background-color: bisque;
+  background-color: greenyellow;
 }
 .pizza-img-container {
   margin-right: 20px;
@@ -166,8 +189,7 @@ ul {
   border-radius: 25px;
 }
 
-.text-nopizzas-car
-{
+.text-nopizzas-car {
   font-family: fantasy;
   font-size: xxx-large;
   text-align: center;
@@ -177,7 +199,6 @@ ul {
 .pizza-img {
   width: 100%;
   border-radius: 25px;
-
 }
 
 .pizza-details {
@@ -188,23 +209,29 @@ ul {
   border-radius: 25px;
 }
 
-.pizza-car-elpago {
-  width: 25%;
-  background-color: yellow;
-  margin-left: 2%;
-  padding: 12px;
-  height: 1%;
-  border: 4px solid;
-  border-radius: 25px;
+.pizza-details p{
+  font-family: math;
+  font-size: larger;
+
 }
 
-.pizza-name{
+.pizza-car-elpago {
+  width: 25%;
+    background-color: yellow;
+    margin-left: 2%;
+    padding: 12px;
+    height: 30%;
+    border: 4px solid;
+    border-radius: 25px;
+}
+
+.pizza-name {
   font-family: fantasy;
   font-size: xxx-large;
   font-variant-caps: all-petite-caps;
 }
 
-.totalprice-car{
+.totalprice-car {
   font-family: fantasy;
   background-color: aqua;
   border-radius: 25px;
@@ -212,19 +239,25 @@ ul {
   border: 1px solid;
 }
 
-.titulo-pago-tuspizzas{
+.titulo-pago-tuspizzas {
   font-family: fantasy;
-    text-align: center;
+  text-align: center;
 }
 
-.caja-btnpagar-car{
+.caja-btnpagar-car {
   display: flex;
   flex-direction: column;
 }
-.btn-eliminar-car{
+.btn-eliminar-car {
   font-family: cursive;
-    font-size: x-large;
-    margin-left: 1rem;
-    
+  font-size: x-large;
+  margin-left: 1rem;
+  width: 20%;
+  height: 4rem;
+}
+
+.pizza-item button{
+  width: 100%;
+  height: 4rem;
 }
 

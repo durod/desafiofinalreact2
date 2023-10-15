@@ -6,7 +6,11 @@ import Button from "react-bootstrap/Button";
 export default function PizzaDetail() {
   const { id } = useParams();
 
-  const { pizzas } = useContext(PizzaContext);
+  const { pizzas, addToCart } = useContext(PizzaContext);
+
+  const handleAddToCartClick = (pizza) => {
+    addToCart(pizza);
+  };
 
   const selectedPizza = pizzas.find((pizza) => pizza.id === id);
   if (!selectedPizza) {
@@ -40,7 +44,11 @@ export default function PizzaDetail() {
               <strong>Precio: ${selectedPizza.price}</strong>
             </h2>
             <div>
-              <Button variant="danger" size="lg">
+              <Button
+                variant="danger"
+                size="lg"
+                onClick={() => handleAddToCartClick(selectedPizza)}
+              >
                 Añadir 🛒
               </Button>
             </div>

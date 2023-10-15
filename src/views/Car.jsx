@@ -43,8 +43,8 @@ export default function Car() {
   }, 0);
 
   return (
-    <div className="pizza-detail-container row">
-      <h2 className="card-titulo-home">Carrito de Compras</h2>
+    <div className="pizza-car-container row">
+      <h2 className="card-titulo-car">Carrito de Compras</h2>
       <ul className="pizza-list">
         {Object.keys(displayedCart).length === 0 ? (
           <p className="text-nopizzas-car">No tienes pizzas en el carrito.</p>
