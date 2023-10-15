@@ -1,0 +1,230 @@
+/*----HOME----*/
+.pizza-detail-container {
+  display: flex;
+  background: url(https://i.pinimg.com/736x/7b/5e/64/7b5e64e793d8d9a11642ed1046fe280b.jpg);
+  width: 100vw;
+  height: 100%;
+  margin-top: 6%;
+  padding: 5rem;
+}
+
+.card-titulo-home {
+  font-family: fantasy;
+  font-size: xxx-large;
+  margin-bottom: 3%;
+  font-style: italic;
+  border: 4px solid slategray;
+  width: 100%;
+  text-align: center;
+  border-radius: 15%;
+}
+
+.pizza-card {
+  transition: 0.3s ease;
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
+  font-family: monospace;
+  font-size: x-large;
+  
+}
+
+.pizza-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: 0.3s ease;
+  height: 98%;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  border-radius: 28px;
+}
+
+.pizza-card:hover {
+  filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 1));
+}
+
+.card-name-home {
+  border: 1px solid;
+  width: 100%;
+  background-color: burlywood;
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+.card-body-home {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 18px;
+  border: 2px solid gray;
+}
+
+.h2-card-home-price {
+  display: flex;
+  justify-content: center;
+}
+
+.btnhome {
+  display: flex;
+  height: 22%;
+  align-items: baseline;
+  gap: 11px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/*----PizzaDetail----*/
+
+
+
+.pizza-info-container {
+  width: 100%;
+  
+  background: url(https://i.pinimg.com/736x/7b/5e/64/7b5e64e793d8d9a11642ed1046fe280b.jpg);
+  display: flex;
+  padding: 6rem;
+  margin-top: 5%;
+}
+
+.pizza-info-card {
+  display: flex;
+}
+
+.h2-infocard-name {
+  text-decoration: underline;
+  font-family: monospace;
+  font-size: xxx-large;
+}
+
+.pizza-info-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 2px;
+  border-radius: 25px
+}
+ul {
+  list-style: circle;
+}
+
+.pizza-info-text {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.card-pizzadetail-descripcion {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background-color: bisque;
+  font-family: monospace;
+}
+
+.pizza-info-price-btn{
+  display: flex;
+  gap: 10rem;
+}
+
+
+
+/*---------CARRITO DE COMPRAS------------------*/
+
+.pizza-list{
+
+  width: 65%;
+
+}
+.pizza-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: solid;
+  border-radius: 25px;
+  padding: 14px;
+  background-color: bisque;
+}
+.pizza-img-container {
+  margin-right: 20px;
+  width: 30%;
+  background-color: black;
+  height: 24%;
+  border-radius: 25px;
+}
+
+.text-nopizzas-car
+{
+  font-family: fantasy;
+  font-size: xxx-large;
+  text-align: center;
+  border: 6px solid;
+}
+
+.pizza-img {
+  width: 100%;
+  border-radius: 25px;
+
+}
+
+.pizza-details {
+  border: 1px solid;
+  width: 41%;
+  text-align: justify;
+  padding: 7px;
+  border-radius: 25px;
+}
+
+.pizza-car-elpago {
+  width: 25%;
+  background-color: yellow;
+  margin-left: 2%;
+  padding: 12px;
+  height: 1%;
+  border: 4px solid;
+  border-radius: 25px;
+}
+
+.pizza-name{
+  font-family: fantasy;
+  font-size: xxx-large;
+  font-variant-caps: all-petite-caps;
+}
+
+.totalprice-car{
+  font-family: fantasy;
+  background-color: aqua;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid;
+}
+
+.titulo-pago-tuspizzas{
+  font-family: fantasy;
+    text-align: center;
+}
+
+.caja-btnpagar-car{
+  display: flex;
+  flex-direction: column;
+}
+.btn-eliminar-car{
+  font-family: cursive;
+    font-size: x-large;
+    margin-left: 1rem;
+    
+}
+
