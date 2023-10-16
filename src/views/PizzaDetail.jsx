@@ -10,11 +10,11 @@ export default function PizzaDetail() {
 
   const handleAddToCartClick = (pizza) => {
     addToCart(pizza);
+    alert(`¡${pizza.name} se ha añadido al carrito!`);
   };
 
   const selectedPizza = pizzas.find((pizza) => pizza.id === id);
   if (!selectedPizza) {
-    // Manejar el caso en el que no se encuentra la pizza
     return <div>Pizza no encontrada</div>;
   }
 

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { PizzaContext } from "../context/MyContext";
 import "../App.css";
+
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
@@ -15,6 +16,7 @@ export default function CardHome() {
 
   const handleAddToCartClick = (pizza) => {
     addToCart(pizza);
+    alert(`¡${pizza.name} se ha añadido al carrito!`);
   };
 
   return (

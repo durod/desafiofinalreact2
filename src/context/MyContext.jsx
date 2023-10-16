@@ -1,5 +1,5 @@
 import React, { useState, createContext, useEffect, useContext } from "react";
-import pizzasData from '../../public/pizzas.json';
+import pizzasData from "../../public/pizzas.json";
 
 export const PizzaContext = createContext();
 
@@ -8,14 +8,12 @@ export const usePizzaContext = () => {
 };
 
 export const PizzaProvider = ({ children }) => {
-  const [pizzas, setPizzas] = useState(pizzasData); // Utiliza pizzasData para inicializar el estado
+  const [pizzas, setPizzas] = useState(pizzasData);
   const [cart, setCart] = useState([]);
 
-
-  
   const getPizzas = async () => {
     try {
-      const response = await fetch("/pizzas.json"); // Ruta correcta al archivo JSON
+      const response = await fetch("/pizzas.json");
       const data = await response.json();
       setPizzas(data);
     } catch (error) {

@@ -9,12 +9,13 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" className=" fixed-top navbar-estilo">
       <Container>
-        <NavLink className={`NavLink-margin ${setActiveClass}`} to="/">
-          {" "}
-          <Navbar.Brand>🍕 Pizzería Mamma Mia!</Navbar.Brand>
-        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+          <NavLink className={`NavLink-margin ${setActiveClass}`} to="/">
+            {" "}
+            <Navbar.Brand>🍕 Pizzería Mamma Mia!</Navbar.Brand>
+          </NavLink>
+
           <Nav className="ms-auto">
             <NavLink className={`NavLink-margin ${setActiveClass}`} to="/Car">
               {" "}
